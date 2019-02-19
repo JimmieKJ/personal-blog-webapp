@@ -25,7 +25,7 @@ import javax.servlet.ServletException;
 import java.io.IOException;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 6/16/2015 10:33 AM
  */
 public class GetCities extends AbstractServlet {

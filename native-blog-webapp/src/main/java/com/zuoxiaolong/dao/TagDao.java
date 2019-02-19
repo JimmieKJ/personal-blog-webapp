@@ -33,7 +33,7 @@ import com.zuoxiaolong.orm.TransactionalOperation;
 import com.zuoxiaolong.util.StringUtil;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月29日 上午1:04:31
  */
 public class TagDao extends BaseDao {

@@ -33,7 +33,7 @@ import com.zuoxiaolong.mvc.DataMap;
 import com.zuoxiaolong.mvc.Namespace;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月27日 上午2:13:35
  */
 @Namespace("admin")

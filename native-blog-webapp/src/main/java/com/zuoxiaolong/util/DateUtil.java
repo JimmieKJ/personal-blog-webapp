@@ -24,7 +24,7 @@ import java.util.SimpleTimeZone;
 import java.util.TimeZone;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/28/2015 7:42 PM
  */
 public abstract class DateUtil {

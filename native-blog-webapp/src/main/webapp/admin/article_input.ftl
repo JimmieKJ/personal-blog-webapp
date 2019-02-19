@@ -69,7 +69,7 @@
             <td>
                 <select name="type">
                     <option value="0" <#if article?? && article.type == "0">selected="selected"</#if>>文章</option>
-                    <option value="1" <#if article?? && article.type == "1">selected="selected"</#if>>小说</option>
+                    <option value="1" <#if article?? && article.type == "1">selected="selected"</#if>>书籍&教程</option>
                 </select>
             </td>
         </tr>

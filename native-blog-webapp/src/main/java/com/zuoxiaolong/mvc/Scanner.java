@@ -25,7 +25,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 6/16/2015 11:01 AM
  */
 public abstract class Scanner {

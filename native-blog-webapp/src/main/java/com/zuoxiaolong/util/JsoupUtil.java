@@ -24,7 +24,7 @@ import org.jsoup.nodes.TextNode;
 import java.util.List;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 15/6/22 02:24
  */
 public abstract class JsoupUtil {

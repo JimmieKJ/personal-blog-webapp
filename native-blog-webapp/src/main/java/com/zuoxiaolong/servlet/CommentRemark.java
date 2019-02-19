@@ -28,7 +28,7 @@ import com.zuoxiaolong.generator.Generators;
 import com.zuoxiaolong.util.HttpUtil;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/8/2015 4:12 PM
  */
 public class CommentRemark extends AbstractServlet {

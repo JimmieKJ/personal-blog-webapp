@@ -24,7 +24,7 @@ import java.util.Map;
 import net.sf.json.JSONArray;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月25日 上午12:15:40
  */
 public abstract class Match {

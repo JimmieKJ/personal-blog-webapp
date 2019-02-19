@@ -28,7 +28,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/18/2015 2:33 PM
  */
 public abstract class ImageUtil {

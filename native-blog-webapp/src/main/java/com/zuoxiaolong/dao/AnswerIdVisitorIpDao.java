@@ -23,7 +23,7 @@ import java.sql.ResultSet;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月12日 下午5:47:40
  */
 public class AnswerIdVisitorIpDao extends BaseDao {

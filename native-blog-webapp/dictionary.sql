@@ -1,1 +1,2 @@
 INSERT INTO dictionaries (name,type) VALUES ('C','LANG'),('C#','LANG'),('C++','LANG'),('Java','LANG'),('Python','LANG'),('Shell','LANG'),('Perl','LANG'),('Php','LANG'),('IOS','LANG'),('Android','LANG'),('Delphi','LANG'),('Erlang','LANG'),('Groovy','LANG'),('Javascript','LANG'),('Ruby','LANG'),('Sass','LANG'),('Scala','LANG'),('VB','LANG');
+INSERT INTO categories (category_name) VALUES('编程基础'),('游戏'),('三维'),('算法'),('GIS'),('OSG'),('CESIUM'),('UE4'),('UNITY3D'),('VR'),('AR'),('MR');

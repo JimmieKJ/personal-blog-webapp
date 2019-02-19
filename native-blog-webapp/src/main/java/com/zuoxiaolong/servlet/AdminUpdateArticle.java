@@ -28,7 +28,7 @@ import javax.servlet.ServletException;
 import java.io.IOException;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年6月18日 上午2:28:03
  */
 @RequestMapping("/admin/updateArticle.do")
@@ -49,7 +49,7 @@ public class AdminUpdateArticle extends AbstractServlet {
 		
 		StringBuffer stringBuffer = new StringBuffer();
 		JsoupUtil.appendText(Jsoup.parse(html), stringBuffer);
-        Integer articleId = DaoFactory.getDao(ArticleDao.class).saveOrUpdate(id, subject, Status.valueOf(Integer.valueOf(status)), Type.valueOf(Integer.valueOf(type)), Integer.valueOf(updateCreateTime), "左潇龙", html, stringBuffer.toString(), icon);
+        Integer articleId = DaoFactory.getDao(ArticleDao.class).saveOrUpdate(id, subject, Status.valueOf(Integer.valueOf(status)), Type.valueOf(Integer.valueOf(type)), Integer.valueOf(updateCreateTime), "3wwang", html, stringBuffer.toString(), icon);
 		if (tags == null || categories == null) {
             return;
         }

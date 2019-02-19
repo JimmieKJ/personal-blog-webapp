@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/22/2015 3:10 PM
  */
 public abstract class IOUtil {

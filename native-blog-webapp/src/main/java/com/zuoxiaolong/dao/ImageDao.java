@@ -28,7 +28,7 @@ import java.sql.SQLException;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月31日 下午2:59:13
  */
 public class ImageDao extends BaseDao {

@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/27/2015 11:05 AM
  */
 public abstract class DataMapLoader {

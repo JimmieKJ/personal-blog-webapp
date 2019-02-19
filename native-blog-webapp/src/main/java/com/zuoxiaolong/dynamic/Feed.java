@@ -32,7 +32,7 @@ import com.zuoxiaolong.orm.DaoFactory;
 import com.zuoxiaolong.util.DateUtil;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/28/2015 7:08 PM
  */
 @Namespace

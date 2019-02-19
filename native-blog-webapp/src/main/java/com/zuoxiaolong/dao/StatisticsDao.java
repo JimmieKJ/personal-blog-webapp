@@ -27,7 +27,7 @@ import java.util.Date;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年6月6日 下午6:04:32
  */
 public class StatisticsDao extends BaseDao {

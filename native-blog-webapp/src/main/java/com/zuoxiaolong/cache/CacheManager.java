@@ -17,7 +17,7 @@ package com.zuoxiaolong.cache;
  */
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/15/2015 5:19 PM
  */
 public abstract class CacheManager {

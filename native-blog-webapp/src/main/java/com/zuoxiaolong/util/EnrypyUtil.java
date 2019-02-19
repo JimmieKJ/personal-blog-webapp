@@ -25,7 +25,7 @@ import java.util.Base64;
 import javax.crypto.Cipher;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月23日 上午2:09:27
  */
 public abstract class EnrypyUtil {

@@ -50,7 +50,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月12日 下午9:24:21
  */
 public abstract class Cnblogs {
@@ -61,7 +61,7 @@ public abstract class Cnblogs {
 
 	private static final String publicKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCp0wHYbg/NOPO3nzMD3dndwS0MccuMeXCHgVlGOoYyFwLdS24Im2e7YyhB0wrUsyYf0/nhzCzBK8ZC9eCWqd0aHbdgOQT6CuFQBMjbyGYvlVYU2ZP7kG9Ft6YV6oc9ambuO7nPZh+bvXH0zDKfi02prknrScAKC0XhadTHT3Al0QIDAQAB";
 	
-	private static final String username = "左潇龙";
+	private static final String username = "3wwang";
 
     private static class DefaultX509TrustManager implements X509TrustManager {
 

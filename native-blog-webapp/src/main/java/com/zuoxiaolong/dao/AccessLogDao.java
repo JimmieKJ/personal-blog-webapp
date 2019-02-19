@@ -34,7 +34,7 @@ import com.zuoxiaolong.orm.BaseDao;
 import com.zuoxiaolong.orm.TransactionalOperation;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/14/2015 12:03 PM
  */
 public class AccessLogDao extends BaseDao {

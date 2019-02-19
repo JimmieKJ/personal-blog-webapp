@@ -39,7 +39,7 @@ import com.zuoxiaolong.util.StringUtil;
 import org.jsoup.Jsoup;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月9日 下午11:22:01
  */
 public class Comment extends AbstractServlet {

@@ -22,7 +22,7 @@ import java.util.Map;
 import javax.servlet.ServletException;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/27/2015 1:51 PM
  */
 public class Logout extends AbstractServlet {

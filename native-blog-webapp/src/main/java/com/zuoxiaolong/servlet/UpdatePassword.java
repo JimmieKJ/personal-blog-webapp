@@ -28,7 +28,7 @@ import org.apache.commons.lang.StringUtils;
 import com.zuoxiaolong.dao.UserDao;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年6月16日 下午10:58:20
  */
 public class UpdatePassword extends AbstractServlet {

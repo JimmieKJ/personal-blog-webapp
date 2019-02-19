@@ -26,7 +26,7 @@ import javax.servlet.ServletException;
 import java.io.IOException;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年6月18日 下午6:50:20
  */
 @RequestMapping("/admin/adminArticleDelete.do")

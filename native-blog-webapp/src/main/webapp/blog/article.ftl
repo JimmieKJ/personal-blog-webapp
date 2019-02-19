@@ -3,9 +3,9 @@
 <head>
 <#assign metaTitle="${article.subject}" />
 <#if article.type == "1">
-    <#assign metaKeywords="异能程序员,程序员小说,小说" />
+    <#assign metaKeywords="书籍,教程" />
 <#else>
-    <#assign metaKeywords="左潇龙,技术文章,技术博客" />
+    <#assign metaKeywords="3wwang,技术文章,技术博客" />
 </#if>
 <#assign metaDescription="${article.summary}" />
 <#include "../common/head.ftl">

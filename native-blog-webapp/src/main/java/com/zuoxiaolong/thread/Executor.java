@@ -17,7 +17,7 @@ package com.zuoxiaolong.thread;
  */
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月25日 下午9:15:05
  */
 public abstract class Executor {

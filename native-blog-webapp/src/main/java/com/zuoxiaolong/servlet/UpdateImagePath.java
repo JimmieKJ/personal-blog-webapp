@@ -24,7 +24,7 @@ import com.zuoxiaolong.dao.UserDao;
 import com.zuoxiaolong.orm.DaoFactory;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年6月18日 下午7:08:23
  */
 public class UpdateImagePath extends AbstractServlet {

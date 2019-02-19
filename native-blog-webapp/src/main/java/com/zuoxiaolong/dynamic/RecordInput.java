@@ -29,7 +29,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年6月18日 下午2:47:47
  */
 @Namespace("admin")

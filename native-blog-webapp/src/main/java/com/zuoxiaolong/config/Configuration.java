@@ -27,7 +27,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/7/2015 10:05 AM
  */
 public abstract class Configuration {

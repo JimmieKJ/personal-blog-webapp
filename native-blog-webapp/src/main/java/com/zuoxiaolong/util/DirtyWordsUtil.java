@@ -27,7 +27,7 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/28/2015 11:11 AM
  */
 public abstract class DirtyWordsUtil {

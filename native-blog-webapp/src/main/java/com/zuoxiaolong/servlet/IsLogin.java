@@ -20,7 +20,7 @@ import javax.servlet.ServletException;
 import java.io.IOException;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 15/6/22 02:11
  */
 public class IsLogin extends AbstractServlet {

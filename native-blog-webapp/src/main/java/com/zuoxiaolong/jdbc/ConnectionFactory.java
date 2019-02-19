@@ -23,7 +23,7 @@ import java.sql.SQLException;
 import com.zuoxiaolong.config.Configuration;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/7/2015 10:23 AM
  */
 public abstract class ConnectionFactory {

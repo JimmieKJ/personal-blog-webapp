@@ -32,7 +32,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年6月16日 上午12:05:05
  */
 public class UploadImage extends AbstractServlet {

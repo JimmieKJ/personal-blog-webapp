@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月19日 上午12:51:37
  */
 public class HeroDao extends BaseDao {

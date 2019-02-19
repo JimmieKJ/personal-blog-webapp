@@ -32,7 +32,7 @@ import com.zuoxiaolong.orm.TransactionalOperation;
 import com.zuoxiaolong.util.EnrypyUtil;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月27日 上午12:04:43
  */
 public class UserDao extends BaseDao {

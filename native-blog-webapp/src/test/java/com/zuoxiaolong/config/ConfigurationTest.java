@@ -21,7 +21,7 @@ import org.junit.Test;
 
 /**
  *
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/7/2015 10:19 AM
  */
 public class ConfigurationTest {

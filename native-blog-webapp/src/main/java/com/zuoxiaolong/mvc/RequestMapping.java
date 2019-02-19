@@ -22,7 +22,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 6/16/2015 11:08 AM
  */
 @Retention(RetentionPolicy.RUNTIME)

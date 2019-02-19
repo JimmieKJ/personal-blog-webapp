@@ -28,7 +28,7 @@ import com.zuoxiaolong.mvc.RequestMapping;
 import com.zuoxiaolong.util.EnrypyUtil;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月27日 下午7:55:28
  */
 @RequestMapping("/admin/login.do")

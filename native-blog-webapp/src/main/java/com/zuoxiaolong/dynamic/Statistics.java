@@ -28,7 +28,7 @@ import com.zuoxiaolong.mvc.Namespace;
 import com.zuoxiaolong.orm.DaoFactory;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月27日 上午1:54:53
  */
 @Namespace("admin")

@@ -37,7 +37,7 @@ import net.sf.json.JSONObject;
 import org.apache.log4j.Logger;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月10日 上午1:30:40
  */
 public abstract class AbstractServlet implements Servlet {

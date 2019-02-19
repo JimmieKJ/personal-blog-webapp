@@ -26,7 +26,7 @@ import com.zuoxiaolong.freemarker.FreemarkerHelper;
 import com.zuoxiaolong.freemarker.IndexHelper;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/7/2015 3:06 PM
  */
 public class IndexGenerator implements Generator {

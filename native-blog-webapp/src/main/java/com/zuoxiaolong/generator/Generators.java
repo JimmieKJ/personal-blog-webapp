@@ -28,7 +28,7 @@ import org.apache.log4j.Logger;
 import com.zuoxiaolong.config.Configuration;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/7/2015 5:44 PM
  */
 public abstract class Generators {

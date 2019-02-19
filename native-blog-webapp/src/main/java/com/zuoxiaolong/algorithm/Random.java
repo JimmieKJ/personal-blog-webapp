@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月24日 下午11:18:03
  */
 public abstract class Random {

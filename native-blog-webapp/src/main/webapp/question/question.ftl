@@ -2,7 +2,7 @@
 <html>
 <head>
 <#assign metaTitle="${question.originTitle}" />
-<#assign metaKeywords="左潇龙,个人博客,Zeus" />
+<#assign metaKeywords="3wwang,个人博客,Zeus" />
 <#assign metaDescription="${question.originTitle}" />
 <#include "../common/head.ftl">
 <link href="${contextPath}/resources/css/common/article.css" rel="stylesheet"/>

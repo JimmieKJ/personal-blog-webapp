@@ -24,7 +24,7 @@ import com.qq.connect.QQConnectException;
 import com.qq.connect.oauth.Oauth;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月26日 下午9:20:28
  */
 public class Redirect extends AbstractServlet {

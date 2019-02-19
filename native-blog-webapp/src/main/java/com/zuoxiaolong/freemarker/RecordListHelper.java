@@ -28,7 +28,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月31日 下午5:07:46
  */
 public abstract class RecordListHelper {

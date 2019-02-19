@@ -19,7 +19,7 @@ package com.zuoxiaolong.generator;
 import com.zuoxiaolong.model.ViewMode;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/7/2015 5:45 PM
  */
 public interface Generator {

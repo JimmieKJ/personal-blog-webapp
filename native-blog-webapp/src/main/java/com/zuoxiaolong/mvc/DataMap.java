@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月24日 上午5:15:33
  */
 public interface DataMap {

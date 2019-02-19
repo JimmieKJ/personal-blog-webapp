@@ -24,7 +24,7 @@ import com.zuoxiaolong.config.Configuration;
 import com.zuoxiaolong.dao.HtmlPageDao;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月25日 下午9:13:19
  */
 public class BaiduPushTask implements Runnable {

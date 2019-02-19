@@ -38,7 +38,7 @@ import java.util.Set;
 import java.util.regex.Pattern;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月24日 上午1:24:45
  */
 public class DynamicFilter implements Filter {

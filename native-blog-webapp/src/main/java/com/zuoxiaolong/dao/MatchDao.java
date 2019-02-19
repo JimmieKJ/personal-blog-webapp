@@ -33,7 +33,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/19/2015 10:15 AM
  */
 public class MatchDao extends BaseDao {

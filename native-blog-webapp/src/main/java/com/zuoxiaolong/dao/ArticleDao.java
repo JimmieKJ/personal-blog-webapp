@@ -35,7 +35,7 @@ import java.util.*;
 import java.util.Date;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/7/2015 3:40 PM
  */
 public class ArticleDao extends BaseDao {

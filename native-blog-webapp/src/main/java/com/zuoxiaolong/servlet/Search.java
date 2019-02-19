@@ -36,7 +36,7 @@ import com.zuoxiaolong.dao.HeroDao;
 import com.zuoxiaolong.dao.MatchDao;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月10日 上午1:30:40
  */
 public class Search extends AbstractServlet {

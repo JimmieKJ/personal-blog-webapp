@@ -31,7 +31,7 @@ import com.zuoxiaolong.cache.CacheManager;
 import com.zuoxiaolong.util.HttpUtil;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/15/2015 5:30 PM
  */
 public class IpFilter implements Filter {

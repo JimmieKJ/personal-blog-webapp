@@ -31,7 +31,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 15/6/29 21:34
  */
 public class RecordGenerator implements Generator {

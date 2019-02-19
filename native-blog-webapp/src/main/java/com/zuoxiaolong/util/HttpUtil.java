@@ -22,7 +22,7 @@ import java.net.UnknownHostException;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月24日 上午12:23:01
  */
 public abstract class HttpUtil {

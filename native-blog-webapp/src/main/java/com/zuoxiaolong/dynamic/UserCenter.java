@@ -31,7 +31,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年6月16日 上午1:35:04
  */
 @Namespace("common")

@@ -26,7 +26,7 @@ import javax.servlet.ServletException;
 import java.io.IOException;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 6/19/2015 6:18 PM
  */
 public class RecordRemark extends AbstractServlet {

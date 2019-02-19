@@ -26,7 +26,7 @@ import com.zuoxiaolong.freemarker.FreemarkerHelper;
 import com.zuoxiaolong.model.ViewMode;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 6/1/2015 5:53 PM
  */
 public class ExceptionGenerator implements Generator {

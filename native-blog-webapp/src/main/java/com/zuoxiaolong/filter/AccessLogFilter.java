@@ -34,7 +34,7 @@ import com.zuoxiaolong.dao.AccessLogDao;
 import com.zuoxiaolong.util.HttpUtil;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/14/2015 11:52 AM
  */
 public class AccessLogFilter implements Filter {

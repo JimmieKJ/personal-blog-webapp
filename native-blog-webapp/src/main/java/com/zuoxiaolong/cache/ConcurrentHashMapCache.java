@@ -20,7 +20,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/15/2015 5:11 PM
  */
 public class ConcurrentHashMapCache extends AbstractCache {

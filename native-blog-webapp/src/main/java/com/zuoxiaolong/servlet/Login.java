@@ -33,7 +33,7 @@ import com.zuoxiaolong.dao.UserDao;
 import com.zuoxiaolong.util.DirtyWordsUtil;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月27日 下午7:55:28
  */
 public class Login extends AbstractServlet {

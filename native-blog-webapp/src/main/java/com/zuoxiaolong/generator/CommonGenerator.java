@@ -25,7 +25,7 @@ import com.zuoxiaolong.config.Configuration;
 import com.zuoxiaolong.freemarker.FreemarkerHelper;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/7/2015 6:06 PM
  */
 public class CommonGenerator implements Generator {

@@ -24,7 +24,7 @@ import com.zuoxiaolong.util.ImageUtil;
 import org.apache.log4j.Logger;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月25日 下午9:11:26
  */
 public class FetchTask implements Runnable {

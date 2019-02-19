@@ -2,8 +2,8 @@
     <div id="slide-holder">
         <!-- 滚动图片 -->
         <div id="slide-runner">
-            <a href="${contextPath}/blog/article_list.ftl?type=1&current=1" title="程序员小说">
-                <img style="left: -3000px;" id="slide-img-1" src="${contextPath}/resources/img/common/banner_new_1.jpg" alt="程序员小说"/>
+            <a href="${contextPath}/blog/article_list.ftl?type=1&current=1" title="书籍&教程">
+                <img style="left: -3000px;" id="slide-img-1" src="${contextPath}/resources/img/common/banner_new_1.jpg" alt="书籍&教程"/>
             </a>
             <a href="${contextPath}/question/question_list.ftl?current=1" title="有问必答">
                 <img style="left: -2000px;" id="slide-img-2" src="${contextPath}/resources/img/common/banner_new_2.jpg" alt="有问必答"/>

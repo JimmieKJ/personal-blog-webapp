@@ -27,7 +27,7 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/7/2015 3:33 PM
  */
 public class ConfigurationListener implements ServletContextListener {

@@ -38,7 +38,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月24日 上午2:04:43
  */
 public abstract class FreemarkerHelper {

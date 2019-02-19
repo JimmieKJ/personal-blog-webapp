@@ -30,7 +30,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月29日 上午1:04:31
  */
 public class DictionaryDao extends BaseDao {

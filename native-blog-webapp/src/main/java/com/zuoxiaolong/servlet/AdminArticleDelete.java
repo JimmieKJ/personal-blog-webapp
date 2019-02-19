@@ -26,7 +26,7 @@ import com.zuoxiaolong.mvc.RequestMapping;
 import com.zuoxiaolong.orm.DaoFactory;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年6月18日 下午6:50:20
  */
 @RequestMapping("/admin/adminArticleDelete.do")

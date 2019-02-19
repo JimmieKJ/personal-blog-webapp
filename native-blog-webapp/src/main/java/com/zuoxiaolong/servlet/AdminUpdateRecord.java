@@ -27,7 +27,7 @@ import javax.servlet.ServletException;
 import java.io.IOException;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年6月18日 上午2:28:03
  */
 @RequestMapping("/admin/updateRecord.do")
@@ -42,7 +42,7 @@ public class AdminUpdateRecord extends AbstractServlet {
 		
 		StringBuffer stringBuffer = new StringBuffer();
 		JsoupUtil.appendText(Jsoup.parse(html), stringBuffer);
-		DaoFactory.getDao(RecordDao.class).saveOrUpdate(id, title, "左潇龙", html, stringBuffer.toString());
+		DaoFactory.getDao(RecordDao.class).saveOrUpdate(id, title, "3wwang", html, stringBuffer.toString());
 		writeText("success");
 	}
 

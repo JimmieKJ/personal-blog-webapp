@@ -17,7 +17,7 @@ package com.zuoxiaolong.model;
  */
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 15/6/26 01:06
  */
 public enum Type {

@@ -28,7 +28,7 @@ import java.io.Writer;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月10日 下午3:17:37
  */
 public class QuestionListGenerator implements Generator {

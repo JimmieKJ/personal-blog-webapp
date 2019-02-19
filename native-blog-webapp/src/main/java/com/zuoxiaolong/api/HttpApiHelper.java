@@ -31,7 +31,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月12日 下午4:58:52
  */
 public abstract class HttpApiHelper {

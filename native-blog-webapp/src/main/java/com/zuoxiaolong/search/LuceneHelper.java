@@ -53,7 +53,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月31日 下午11:20:02
  */
 public abstract class LuceneHelper {

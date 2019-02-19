@@ -20,7 +20,7 @@ import com.zuoxiaolong.util.DirtyWordsUtil;
 import org.apache.log4j.Logger;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/28/2015 11:55 AM
  */
 public class DirtyWordsFlushTask implements Runnable {

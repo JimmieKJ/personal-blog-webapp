@@ -30,7 +30,7 @@ import com.zuoxiaolong.jdbc.ConnectionFactory;
 import javax.swing.text.View;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/7/2015 11:44 AM
  */
 public abstract class BaseDao {

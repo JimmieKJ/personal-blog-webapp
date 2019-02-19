@@ -30,7 +30,7 @@ import java.util.*;
 import java.util.Date;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月9日 下午11:34:14
  */
 public class MessageDao extends BaseDao {

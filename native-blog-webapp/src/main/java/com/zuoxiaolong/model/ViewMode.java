@@ -17,7 +17,7 @@ package com.zuoxiaolong.model;
  */
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/27/2015 10:56 AM
  */
 public enum ViewMode {

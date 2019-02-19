@@ -22,7 +22,7 @@ import java.net.URLEncoder;
 import java.util.regex.Pattern;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 2015年5月30日 下午8:05:03
  */
 public abstract class StringUtil {

@@ -30,7 +30,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author 左潇龙
+ * @author 3wwang
  * @since 5/7/2015 6:06 PM
  */
 public class ArticleGenerator implements Generator {
