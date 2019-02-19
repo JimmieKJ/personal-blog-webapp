@@ -85,6 +85,6 @@
     <div class="links">
         <h3><span>[<a href="#">申请友情链接</a>]</span>友情链接</h3>
         <ul>
-            <li><a href="http://www.cnblogs.com/zuoxiaolong" target="_blank">Zeus博客园</a></li>
+            <li><a href="http://www.cnblogs.com/wang985850293" target="_blank">3wwang博客园</a></li>
         </ul>
     </div>

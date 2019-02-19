@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>3wwang个人博客</title>
-        <atom:link href="http://www.zuoxiaolong.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <link>http://www.zuoxiaolong.com</link>
+        <atom:link href="http://www.3wwang.cn/feed.xml" rel="self" type="application/rss+xml"/>
+        <link>http://www.3wwang.cn</link>
         <description>一起走在编程的路上</description>
         <lastBuildDate>${lastBuildDate}</lastBuildDate>
         <language>zh-CN</language>
