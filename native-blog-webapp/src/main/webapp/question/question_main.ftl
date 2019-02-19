@@ -1,4 +1,8 @@
     <!-- 主题内容模块 -->
+    	<script type="text/javascript" src="${contextPath}/resources/js/common/jquery.min.js"></script>
+	<script type="text/javascript" src="${contextPath}/resources/js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/tinymce/tinymce.init.js"></script>
+    
     <div class="index_about">
         <h2 class="c_titile">${question.title}</h2>
 

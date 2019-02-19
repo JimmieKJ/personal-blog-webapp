@@ -7,5 +7,6 @@
             <li><a href="http://blog.chinaunix.net/uid/69910771.html" target="_blank">chinaunix</a></li>
             <li><a href="http://blog.51cto.com/9302896" target="_blank">51CTO</a></li>
             <li><a href="https://u014177758.iteye.com/" target="_blank">iteye</a> </li>
+            <li><a href="https://www.zhihu.com/people/kjwang-zhihu/activities" target="_blank">知乎</a> </li>
         </ul>
     </div>

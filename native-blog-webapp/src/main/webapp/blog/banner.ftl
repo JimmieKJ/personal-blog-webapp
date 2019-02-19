@@ -12,7 +12,7 @@
                 <img style="left: -1000px;" id="slide-img-3" src="${contextPath}/resources/img/common/banner_new_3.jpg" alt="留言板"/>
             </a>
             <a href="${contextPath}/record/record_list.ftl?current=1" title="问题记录">
-                <img style="left: 0px;" id="slide-img-4" src="${contextPath}/resources/img/common/banner_new_4.jpg" alt="问题记录"/>
+                <img style="left: 0px;" id="slide-img-4" src="${contextPath}/resources/img/common/banner_3.jpg" alt="问题记录"/>
             </a>
 
             <div id="slide-controls">
