@@ -3,3 +3,10 @@
 
 # 示例网站地址
 www.zuoxiaolong.com
+
+# 使用指南
+mysql8.x
+source *.sql
+html/insert_code.html
+html/upload_image.html
+temp/

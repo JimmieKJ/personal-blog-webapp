@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>3wwang个人博客-记录走过的Java之路</title>
+<meta name="keywords" content="一个屌丝程序猿的人生,阿里中间件,任务调度框架,分布式,niubi-job,程序员小说,3wwang,3wwang个人博客,3wwang程序员小说,异能程序员">
+<meta name="description" content="3wwang个人博客，记录了职场与生活当中的点点滴滴，让你看到不一样的程序员博客">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta property="qc:admins" content="11436637076257011747676375" />
+<link href="http://localhost:8080/resources/css/common/base.css" rel="stylesheet">
+<link href="http://localhost:8080/resources/css/common/index.css" rel="stylesheet">
+<link href="http://localhost:8080/resources/css/common/github_button.css" rel="stylesheet">
+<link href="http://localhost:8080/resources/css/common/jquery-ui.min.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="http://localhost:8080/resources/css/shbrush/shCore.css"/>
+<link type="text/css" rel="stylesheet" href="http://localhost:8080/resources/css/shbrush/shThemeDefault.css"/>    <title>插入代码</title>
+    <style>
+        body { overflow: hidden;}
+    </style>
+</head>
+<body>
+    <div>
+        <table class="form_table"  style="width:780px;height:380px;border: hidden;margin: 10px;">
+            <tr>
+                <td class="form_info">
+                    编程语言:
+                </td>
+                <td class="form_input">
+                    <select name="language" id="language_select">
+                        <option value="applescript">AppleScript</option>
+                        <option value="as3">AS3</option>
+                        <option value="bash">Bash</option>
+                        <option value="coldfusion">ColdFusion</option>
+                        <option value="cpp">C++</option>
+                        <option value="csharp">C#</option>
+                        <option value="css">Css</option>
+                        <option value="delphi">Delphi</option>
+                        <option value="diff">Diff</option>
+                        <option value="erlang">Erlang</option>
+                        <option value="groovy">Groovy</option>
+                        <option value="java" selected="selected">Java</option>
+                        <option value="javafx">JavaFX</option>
+                        <option value="js">JScript</option>
+                        <option value="perl">Perl</option>
+                        <option value="php">Php</option>
+                        <option value="plain">Plain</option>
+                        <option value="powershell">PowerShell</option>
+                        <option value="python">Python</option>
+                        <option value="ruby">Ruby</option>
+                        <option value="sass">Sass</option>
+                        <option value="scala">Scala</option>
+                        <option value="sql">Sql</option>
+                        <option value="vb">Vb</option>
+                        <option value="xml">Xml</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="form_info">
+                    选项:
+                </td>
+                <td class="form_input">
+                    <span style="font-size: 12px;line-height: 25px;height: 25px;margin: 3px 0px;">
+                        <input id="is_collapse_input" type="checkbox" name="isCollapse"/>
+                        <label for="is_collapse_input">是否折叠</label>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top"  class="form_info">
+                    代码:
+                </td>
+                <td class="form_input">
+                    <textarea name="code" id="code_textarea" style="width:600px;height:200px;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    <input class="form_button" type="button" value="确定" id="insert_code_button" />&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+        </table>
+    </div>
+<script type="text/javascript" src="http://localhost:8080/resources/js/common/jquery.min.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/common/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/common/jquery.form.min.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/common/sliders.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/common/common.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shCore.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushAppleScript.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushAS3.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushBash.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushColdFusion.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushCpp.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushCSharp.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushCss.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushDelphi.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushDiff.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushErlang.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushGroovy.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushJava.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushJScript.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushJavaFX.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushPerl.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushPhp.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushPlain.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushJava.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushPython.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushRuby.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushSass.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushScala.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushSql.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushVb.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/shbrush/shBrushXml.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/common/forbidden.backspace.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+    var contextPath = "http://localhost:8080";
+</script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript" src="http://localhost:8080/resources/js/tinymce/tinymce.init.js"></script>
+<script type="application/javascript">
+    window.onload = function () {
+        var tabElement = document.getElementById("tab");
+        var msMainElement = document.getElementById("ms-main");
+        if (!tabElement || !msMainElement) {
+            return;
+        }
+        var liElement = tabElement.getElementsByTagName("li");
+        var divElement = msMainElement.getElementsByTagName("div");
+
+        for (var i = 0; i < liElement.length; i++) {
+            liElement[i].index = i;
+            liElement[i].onmouseover = function () {
+                for (var n = 0; n < liElement.length; n++) liElement[n].className = "";
+                this.className = "cur";
+                for (var n = 0; n < divElement.length; n++) divElement[n].style.display = "none";
+                divElement[this.index].style.display = "block";
+            }
+        }
+    };
+    $(document).ready(function(){
+        $("#site_search_button").click(function() {
+            if (!$("#search_text_input").val().trim()) {
+                alert("搜索内容不能为空！");
+                return false;
+            }
+            searchArticles("searchText",$("#search_text_input").val());
+        });
+        $("#qq_login_button").click(function(){
+            window.location.href="http://localhost:8080/redirect.do";
+        });
+        $("#logout_button").click(function(){
+            $.ajax({
+                url:"http://localhost:8080/logout.do",
+                type:"POST",
+                success:function(data) {
+                    if(data && data == 'success'){
+                        window.location.href="http://localhost:8080";
+                    }
+                }
+            });
+        });
+        $("#login_register_button").click(function(){
+            $.ajax({
+                url:"http://localhost:8080/login.do",
+                type:"POST",
+                data:{"username":$("input[name=username]").val(),"password":$("input[name=password]").val()},
+                success:function(data){
+                    if(data && data.success){
+                        window.location.href=data.url;
+                    } else {
+                        $("#login_error_td").css("color","red");
+                        $("#login_error_td").html(data);
+                    }
+                }
+            });
+        });
+    });
+    <!-- 滚动图片切换 -->
+    if (!window.slider) {
+        var slider = {};
+    }
+    slider.data = [
+        {
+            "id": "slide-img-1",
+            "client": "",
+            "desc": ""
+        },
+        {
+            "id": "slide-img-2",
+            "client": "",
+            "desc": ""
+        },
+        {
+            "id": "slide-img-3",
+            "client": "",
+            "desc": ""
+        },
+        {
+            "id": "slide-img-4",
+            "client": "",
+            "desc": ""
+        }
+    ];
+</script>    <script type="application/javascript">
+        $(document).ready(function(){
+            $("#insert_code_button").click(function(){
+                var content = '<pre class="brush: ' + $("#language_select").val() + '; ';
+                content = content + 'collapse :' + $("#is_collapse_input").is(":checked") + ';';
+                content = content + 'gutter :true;">';
+                content = content + $("#code_textarea").val() + '</pre><br/>';
+                top.tinymce.activeEditor.insertContent(content);
+                top.tinymce.activeEditor.windowManager.close();
+            });
+        });
+    </script>
+</body>
+</html>
