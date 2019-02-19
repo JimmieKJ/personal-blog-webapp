@@ -1,9 +1,9 @@
 <div class="index_about">
     <ul style="overflow: hidden; margin: 20px 30px 20px 0; line-height: 28px; font-size: 16px;color:#666;">
         <strong style="font-size: 24px;">关注博主：</strong><br><br>
-		        微信公众号：搜索【3wwang】即可，或加微信号【3wwang】，用于发布YY面试活动。<br>
+		        微信公众号：搜索【3wwang】即可，或加微信号【3wwang】，用于发布博客，资源密码发布以及一些生活小常识的更新。<br>
 		        交流群：850465415【新开】<br>
-		        交流群用于技术探讨和交流，请不要重复加入多个交流群。<br>
+		        交流群用于技术探讨和交流，共同维持qq群的环境整洁。<br>
 		        进群请注明：“来自3wwang博客”。<br>
 		        加群需知：群名片统一格式为：<br>
 		        【城市-姓名或昵称-语言】<br>
@@ -22,18 +22,22 @@
 			    <div id="slide-holder">
 			        <!-- 滚动图片 -->
 			        <div id="slide-runner">
-			            <a href="${contextPath}/blog/article_list.ftl?type=1&current=1" title="书籍&教程">
-			                <img style="left: -3000px;" id="slide-img-1" src="${contextPath}/resources/img/common/banner_new_1.jpg" alt="书籍&教程"/>
+			        
+			        
+			        	<a href="" title="风场与温度场模拟">
+			                <img style="left: -3000px;" id="slide-img-1" src="${contextPath}/resources/img/common/aboutme_8.png" alt="风场与温度场模拟"/>
 			            </a>
-			            <a href="${contextPath}/question/question_list.ftl?current=1" title="有问必答">
-			                <img style="left: -2000px;" id="slide-img-2" src="${contextPath}/resources/img/common/banner_new_2.jpg" alt="有问必答"/>
+			            <a href="" title="工业机器人离线在线仿真">
+			                <img style="left: -2000px;" id="slide-img-2" src="${contextPath}/resources/img/common/aboutme_9.png" alt="工业机器人离线在线仿真"/>
 			            </a>
-			            <a href="${contextPath}/message/message_list.ftl?current=1" title="留言板">
-			                <img style="left: -1000px;" id="slide-img-3" src="${contextPath}/resources/img/common/banner_new_3.jpg" alt="留言板"/>
+			            <a href="" title="3D台风轨迹模拟">
+			                <img style="left: -1000px;" id="slide-img-3" src="${contextPath}/resources/img/common/aboutme_3.png" alt="3D台风轨迹模拟"/>
 			            </a>
-			            <a href="${contextPath}/record/record_list.ftl?current=1" title="问题记录">
-			                <img style="left: 0px;" id="slide-img-4" src="${contextPath}/resources/img/common/banner_new_4.jpg" alt="问题记录"/>
+			            <a href="" title="脑控射击游戏">
+			                <img style="left: 0px;" id="slide-img-4" src="${contextPath}/resources/img/common/aboutme_4.png" alt="脑控射击游戏"/>
 			            </a>
+			        
+			            
 			
 			            <div id="slide-controls">
 			                <p id="slide-client" class="text"><strong></strong><span></span></p>
