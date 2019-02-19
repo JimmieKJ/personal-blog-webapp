@@ -1,3 +1,4 @@
+    <script type="text/javascript" src="${contextPath}/resources/js/common/jquery.min.js"></script>
     <script type="application/javascript">
     $(document).ready(function(){
     	$("#ask_button").click(function() {

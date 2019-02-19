@@ -1,3 +1,6 @@
+	<script type="text/javascript" src="${contextPath}/resources/js/common/jquery.min.js"></script>
+	<script type="text/javascript" src="${contextPath}/resources/js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/tinymce/tinymce.init.js"></script>
 	<script type="application/javascript">
 		tinymceInit({width:600,height:300});
 		$(document).ready(function(){
