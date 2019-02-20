@@ -28,7 +28,7 @@
                     success: function(data) {
                         if (data && data == 'success') {
                             alert("提问成功");
-                            window.location.href = "${contextPath}/question/question_index.ftl";
+                            window.location.href = "${contextPath}/question/question_list.ftl";
                         } else {
                             alert("提问失败，请联系站长");
 						}

@@ -59,7 +59,7 @@ public class Callback extends HttpServlet {
 				userMap.put("imagePath", imagePath);
 				DaoFactory.getDao(UserDao.class).saveOrUpdateQqLogin(openId, nickName, imagePath);
 				request.getSession().setAttribute("user", userMap);
-				response.sendRedirect("/blog/question_index.ftl");
+				response.sendRedirect("/blog/question_list.ftl");
 			} else {
 				AbstractServlet.writeText(response, "很抱歉，我们没能正确获取到您的信息，原因是：" + userInfoBean.getMsg());
 			}

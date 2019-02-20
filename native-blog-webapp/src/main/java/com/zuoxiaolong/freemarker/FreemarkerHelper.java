@@ -61,7 +61,7 @@ public abstract class FreemarkerHelper {
         Map<String, Object> data = new HashMap<>();
         String contextPath = Configuration.getSiteUrl();
         data.put("contextPath", contextPath);
-        data.put("questionUrl", contextPath + "/question/question_index.ftl");
+        data.put("questionUrl", contextPath + "/question/question_list.ftl");
         if (ViewMode.DYNAMIC == viewMode) {
             data.put("indexUrl", IndexHelper.generateDynamicPath());
             data.put("questionIndexUrl", QuestionListHelper.generateDynamicPath(1));

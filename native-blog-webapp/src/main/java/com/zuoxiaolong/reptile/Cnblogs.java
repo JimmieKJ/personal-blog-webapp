@@ -61,7 +61,7 @@ public abstract class Cnblogs {
 
 	private static final String publicKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCp0wHYbg/NOPO3nzMD3dndwS0MccuMeXCHgVlGOoYyFwLdS24Im2e7YyhB0wrUsyYf0/nhzCzBK8ZC9eCWqd0aHbdgOQT6CuFQBMjbyGYvlVYU2ZP7kG9Ft6YV6oc9ambuO7nPZh+bvXH0zDKfi02prknrScAKC0XhadTHT3Al0QIDAQAB";
 	
-	private static final String username = "3wwang";
+	private static final String username = "985850293";
 
     private static class DefaultX509TrustManager implements X509TrustManager {
 
@@ -440,7 +440,7 @@ public abstract class Cnblogs {
         	if (logger.isInfoEnabled()) {
         		logger.info("begin fetch the " + i + " page...");
 			}
-            Document document = Jsoup.connect("http://www.cnblogs.com/zuoxiaolong/default.html?page=" + i).get();
+            Document document = Jsoup.connect("http://www.cnblogs.com/wang985850293/default.html?page=" + i).get();
             Element mainElement = document.getElementById("mainContent");
             Elements elements = mainElement.getElementsByClass("postTitle");
             int pageSize = 0;
