@@ -16,15 +16,20 @@ package com.zuoxiaolong.servlet;
  * limitations under the License.
  */
 
+import com.zuoxiaolong.config.Configuration;
 import com.zuoxiaolong.dao.*;
 import com.zuoxiaolong.model.Status;
 import com.zuoxiaolong.model.Type;
 import com.zuoxiaolong.mvc.RequestMapping;
 import com.zuoxiaolong.orm.DaoFactory;
+import com.zuoxiaolong.thread.Executor;
+import com.zuoxiaolong.thread.FetchTask;
 import com.zuoxiaolong.util.JsoupUtil;
+
 import org.jsoup.Jsoup;
 
 import javax.servlet.ServletException;
+
 import java.io.IOException;
 
 /**
@@ -72,6 +77,12 @@ public class AdminUpdateArticle extends AbstractServlet {
                 continue;
             }
             DaoFactory.getDao(ArticleCategoryDao.class).save(articleId, Integer.valueOf(categoryId));
+        }
+        if (Configuration.isProductEnv()) {
+            if (logger.isInfoEnabled()) {
+                logger.info("starting fetch and generate thread...");
+            }
+            Executor.executeTask(new FetchTask());
         }
         writeText("success");
 	}

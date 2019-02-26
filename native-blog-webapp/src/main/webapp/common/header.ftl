@@ -1,3 +1,13 @@
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?607dc0149fed64c0f06caf4259ba593e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 <header>
     <div class="logo float_left"><a href="#"><img src="${contextPath}/resources/img/common/header_logo.png"></a></div>
     <nav id="header_nav" class="float_right">
