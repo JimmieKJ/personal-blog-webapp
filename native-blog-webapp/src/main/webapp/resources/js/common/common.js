@@ -25,7 +25,7 @@ function isLogin() {
 
 function searchArticles(name, value) {
 	var url = contextPath + '/blog/article_list.ftl?current=1';
-	url = url + '&' + name + '=' + encodeURI(value);
+	url = url + '&' + name + '=' + encodeURI(encodeURI(value));
 	window.location.href=url;
 }
 
