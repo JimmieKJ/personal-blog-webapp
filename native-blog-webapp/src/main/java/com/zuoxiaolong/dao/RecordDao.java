@@ -106,7 +106,7 @@ public class RecordDao extends BaseDao {
     }
 
     public List<Map<String, String>> getRecords(Map<String, Integer> pager, ViewMode viewMode) {
-        return getPager(pager, "records", "good_times", viewMode);
+        return getPager(pager, "records", "create_date", viewMode);
     }
 
     public Integer saveOrUpdate(String id, String title, String username, String html, String content) {

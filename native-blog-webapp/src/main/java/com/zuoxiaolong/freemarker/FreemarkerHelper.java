@@ -94,7 +94,7 @@ public abstract class FreemarkerHelper {
             data.put("newComments", DaoFactory.getDao(CommentDao.class).getLastComments(DEFAULT_RIGHT_COMMENT_NUMBER, viewMode));
             if (ViewMode.DYNAMIC == viewMode) {
                 data.put("accessArticlesUrl", ArticleListHelper.generateDynamicPath("access_times", 1));
-                data.put("newArticlesUrl", ArticleListHelper.generateDynamicPath("create_date", 1));
+                data.put("newArticlesUrl", ArticleListHelper.generateDynamicTypePath(0, 1));
                 data.put("recommendArticlesUrl", ArticleListHelper.generateDynamicPath("good_times", 1));
             } else {
             	data.put("accessArticlesUrl", ArticleListHelper.generateStaticPath("access_times", 1));

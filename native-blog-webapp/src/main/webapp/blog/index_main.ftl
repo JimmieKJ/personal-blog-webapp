@@ -4,11 +4,11 @@
     </h1>
 <#if articles??>
     <#list articles as article>
-        <#if article_index gt 5>
+        <#if article_index gt 10>
             <#break />
         </#if>
         <div class="blogs">
-            <figure><img src="${article.icon}" title="niubi-job——一个分布式的任务调度框架"></figure>
+            <figure><img src="${article.icon}" title="3wwang个人博客-记录走过的技术之路"></figure>
             <ul>
                 <h3><a href="${contextPath}${article.url}">${article.subject}</a></h3>
                 <p>
@@ -24,4 +24,7 @@
         </div>
     </#list>
 </#if>
+</div>
+<div>
+	<a class="header_nav_a" href="${contextPath}/blog/article_list.ftl?type=0&current=1" title="全部文章">全部文章</a>
 </div>

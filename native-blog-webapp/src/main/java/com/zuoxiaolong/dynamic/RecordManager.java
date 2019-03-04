@@ -52,10 +52,10 @@ public class RecordManager implements DataMap {
 		pager.put("page", page);
 		data.put("pageRecords", DaoFactory.getDao(RecordDao.class).getRecords(pager, ViewMode.DYNAMIC));
 		data.put("pager", pager);
-		data.put("firstArticleListUrl", "/admin/article_manager.ftl?current=1");
-		data.put("preArticleListUrl", "/admin/article_manager.ftl?current=" + (current - 1));
-		data.put("nextArticleListUrl", "/admin/article_manager.ftl?current=" + (current + 1));
-		data.put("lastArticleListUrl", "/admin/article_manager.ftl?current=" + (page));
+		data.put("firstPageUrl", "/admin/record_manager.ftl?current=1");
+		data.put("prePageUrl", "/admin/record_manager.ftl?current=" + (current - 1));
+		data.put("nextPageUrl", "/admin/record_manager.ftl?current=" + (current + 1));
+		data.put("lastPageUrl", "/admin/record_manager.ftl?current=" + (page));
 	}
 	
 }
