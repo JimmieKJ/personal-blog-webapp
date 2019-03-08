@@ -2,6 +2,7 @@
 <script type="text/javascript" src="${contextPath}/resources/js/common/jquery-ui.min.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/common/jquery.form.min.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/common/sliders.js"></script>
+<script type="text/javascript" src="${contextPath}/resources/js/common/gVerify.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/common/common.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/shbrush/shCore.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/shbrush/shBrushAppleScript.js"></script>
@@ -38,6 +39,7 @@
 <script type="text/javascript" src="${contextPath}/resources/js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/js/tinymce/tinymce.init.js"></script>
 <script type="application/javascript">
+var verifyCode_admin = new GVerify("v_container_admin");
     window.onload = function () {
         var tabElement = document.getElementById("tab");
         var msMainElement = document.getElementById("ms-main");
@@ -57,6 +59,15 @@
             }
         }
     };
+    function admin_check(){
+        var res = verifyCode_admin.validate(document.getElementById("code_input_admin").value);
+        if(res){
+            return true;
+        }else{
+        	alert("验证码错误");
+            return false;
+        }
+	}
     $(document).ready(function(){
         $("#site_search_button").click(function() {
             if (!$("#search_text_input").val().trim()) {
@@ -79,8 +90,11 @@
                 }
             });
         });
-        $("#login_register_button").click(function(){
-            $.ajax({
+        
+		function login_register_func(){
+            var res = verifyCode_admin.validate(document.getElementById("code_input_admin").value);
+	        if(res){
+	            $.ajax({
                 url:"${contextPath}/login.do",
                 type:"POST",
                 data:{"username":$("input[name=username]").val(),"password":$("input[name=password]").val()},
@@ -92,8 +106,13 @@
                         $("#login_error_td").html(data);
                     }
                 }
-            });
-        });
+                });
+	        }else{
+	            alert("验证码错误");
+	        }
+        }
+        $("#login_button").click(function(){login_register_func();});
+        $("#register_button").click(function(){login_register_func();});
     });
     <!-- 滚动图片切换 -->
     if (!window.slider) {

@@ -20,21 +20,15 @@
                 <tr>
                     <td style="font-size: 12px;">用户名：</td>
                     <td><input class="text_input" type="text" name="username"/></td>
-                    <td><a id="login_register_button" href="#" class="button">登录&nbsp;|&nbsp;注册</a></td>
                 </tr>
                 <tr>
                     <td style="font-size: 12px;">密  码：</td>
                     <td><input class="text_input" type="password" name="password"/></td>
-                    <td>
-                        <!--
-                        <a href="#" id="qq_login_button"><img width="50" height="20" src="${contextPath}/resources/img/qq_login.png" title="使用QQ登录"></a>
-                        -->
-                        &nbsp;
-                    </td>
                 </tr>
+                <#include "../common/gVerify.ftl">
 				<tr>
-                    <td>&nbsp;</td>
-                    <td colspan="2" id="login_error_td" style="font-size:11px;">用户名支持字母，数字，下划线和中文</td>
+                    <td><a id="login_button" href="#" class="button">登录</a></td>
+                    <td><a id="register_button" href="#" class="button">注册</a></td>
                 </tr>
                 </tbody>
             </table>
