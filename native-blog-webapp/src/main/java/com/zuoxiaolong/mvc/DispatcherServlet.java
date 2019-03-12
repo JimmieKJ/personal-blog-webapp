@@ -47,14 +47,15 @@ public class DispatcherServlet extends HttpServlet {
         String requestUri = request.getRequestURI();
         String realRequestUri = requestUri.substring(request.getContextPath().length(), requestUri.length());
         Servlet servlet = mapping.get(realRequestUri);
-        while (servlet == null) {
+        if (servlet == null) {
             if (realRequestUri.startsWith("/")) {
                 servlet = mapping.get(StringUtil.replaceStartSlant(realRequestUri));
             } else {
                 throw new RuntimeException("unknown request mapping.");
             }
         }
-        servlet.execute(request, response);
+        if(servlet != null)
+        	servlet.execute(request, response);
     }
 
     @Override
