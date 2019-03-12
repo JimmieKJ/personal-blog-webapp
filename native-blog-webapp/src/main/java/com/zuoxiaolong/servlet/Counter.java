@@ -20,16 +20,10 @@ import java.io.IOException;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.zuoxiaolong.dao.QuestionDao;
-import com.zuoxiaolong.dao.RecordDao;
-import com.zuoxiaolong.orm.DaoFactory;
 import org.apache.log4j.Logger;
 
-import com.zuoxiaolong.dao.ArticleDao;
-import com.zuoxiaolong.dao.ArticleIdVisitorIpDao;
-import com.zuoxiaolong.generator.Generators;
 import com.zuoxiaolong.util.HttpUtil;
-
+import com.zuoxiaolong.thread.DoCounter;
 /**
  * @author 3wwang
  * @since 5/8/2015 4:12 PM
@@ -42,62 +36,90 @@ public class Counter extends AbstractServlet {
     protected void service() throws IOException {
     	HttpServletRequest request = getRequest();
 		Integer type = Integer.valueOf(request.getParameter("type"));
-		if (type == 1) {
-			updateArticle(request);
-		} else if (type == 2) {
-			updateQuestion(request);
-		}  else if (type == 3) {
-            updateRecord(request);
-        } else {
-			throw new RuntimeException("unknown type.");
-		}
+		
+		
+		Integer recordId = 1;
+		Integer questionId = 1;
+		Integer articleId = 1;
+		String column = "";
+		String ip = HttpUtil.getVisitorIp(request);
+		String username = getUsername();
+    	if(request.getParameter("recordId") != null)
+    		recordId = Integer.valueOf(request.getParameter("recordId"));
+    	if(request.getParameter("questionId") != null)
+    		questionId = Integer.valueOf(request.getParameter("questionId"));
+    	if(request.getParameter("column") != null)
+    		column =  request.getParameter("column");
+    	if(request.getParameter("articleId") != null)
+    		articleId =  Integer.valueOf(request.getParameter("articleId"));
+    	
+    	DoCounter counterTask = new DoCounter();
+    	counterTask.setMarticleId(articleId);
+    	counterTask.setMcolumn(column);
+    	counterTask.setMip(ip);
+    	counterTask.setMquestionId(questionId);
+    	counterTask.setMrecordId(recordId);
+    	counterTask.setMtype(type);
+    	counterTask.setMusername(username);
+    	Thread thread = new Thread(counterTask);
+		thread.start();
+
+//		if (type == 1) {
+//			updateArticle(request);
+//		} else if (type == 2) {
+//			updateQuestion(request);
+//		}  else if (type == 3) {
+//            updateRecord(request);
+//        } else {
+//			throw new RuntimeException("unknown type.");
+//		}
+		writeText("success");
     }
 
-    private void updateRecord(HttpServletRequest request) {
-        Integer recordId = Integer.valueOf(request.getParameter("recordId"));
-        DaoFactory.getDao(RecordDao.class).updateCount(recordId);
-        writeText("success");
-    }
-
-	private void updateQuestion(HttpServletRequest request) {
-		Integer questionId = Integer.valueOf(request.getParameter("questionId"));
-		DaoFactory.getDao(QuestionDao.class).updateCount(questionId);
-		writeText("success");
-	}
-
-	private void updateArticle(HttpServletRequest request) {
-		Integer articleId = Integer.valueOf(request.getParameter("articleId"));
-		String column = request.getParameter("column");
-		if (logger.isInfoEnabled()) {
-			logger.info("counter param : articleId = " + articleId + "   , column = " + column);
-		}
-		if (!column.equals("access_times")) {
-			if (logger.isInfoEnabled()) {
-				logger.info("there is someone remarking...");
-			}
-			String username = getUsername();
-			String ip = HttpUtil.getVisitorIp(request);
-			if (DaoFactory.getDao(ArticleIdVisitorIpDao.class).exists(articleId, ip, username)) {
-				writeText("exists");
-				if (logger.isInfoEnabled()) {
-					logger.info(ip + " has remarked...");
-				}
-				return ;
-			} else {
-				DaoFactory.getDao(ArticleIdVisitorIpDao.class).save(articleId, ip, username);
-			}
-		}
-		boolean result = DaoFactory.getDao(ArticleDao.class).updateCount(articleId, column);
-		if (!result) {
-			logger.error("updateCount error!");
-			return;
-		}
-		if (result && logger.isInfoEnabled()) {
-			logger.info("updateCount success!");
-		}
-		writeText("success");
-		Generators.generateArticle(articleId);
-	}
+//    private void updateRecord(HttpServletRequest request) {
+//        Integer recordId = Integer.valueOf(request.getParameter("recordId"));
+//        DaoFactory.getDao(RecordDao.class).updateCount(recordId);
+//        writeText("success");
+//    }
+//
+//	private void updateQuestion(HttpServletRequest request) {
+//		Integer questionId = Integer.valueOf(request.getParameter("questionId"));
+//		DaoFactory.getDao(QuestionDao.class).updateCount(questionId);
+//		writeText("success");
+//	}
+//
+//	private void updateArticle(HttpServletRequest request) {
+//		Integer articleId = Integer.valueOf(request.getParameter("articleId"));
+//		String column = request.getParameter("column");
+//		if (logger.isInfoEnabled()) {
+//			logger.info("counter param : articleId = " + articleId + "   , column = " + column);
+//		}
+//		if (!column.equals("access_times")) {
+//			if (logger.isInfoEnabled()) {
+//				logger.info("there is someone remarking...");
+//			}
+//			String username = getUsername();
+//			String ip = HttpUtil.getVisitorIp(request);
+//			if (DaoFactory.getDao(ArticleIdVisitorIpDao.class).exists(articleId, ip, username)) {
+//				writeText("exists");
+//				if (logger.isInfoEnabled()) {
+//					logger.info(ip + " has remarked...");
+//				}
+//				return ;
+//			} else {
+//				DaoFactory.getDao(ArticleIdVisitorIpDao.class).save(articleId, ip, username);
+//			}
+//		}
+//		boolean result = DaoFactory.getDao(ArticleDao.class).updateCount(articleId, column);
+//		if (!result) {
+//			logger.error("updateCount error!");
+//			return;
+//		}
+//		if (result && logger.isInfoEnabled()) {
+//			logger.info("updateCount success!");
+//		}
+//		writeText("success");
+//		Generators.generateArticle(articleId);
+//	}
 
 }
-

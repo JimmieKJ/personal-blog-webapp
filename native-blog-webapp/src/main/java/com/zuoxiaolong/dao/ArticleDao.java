@@ -61,7 +61,7 @@ public class ArticleDao extends BaseDao {
 		return execute((Operation<List<Map<String, String>>>) connection -> {
             List<Map<String, String>> result = new ArrayList<>();
             try {
-                PreparedStatement statement = connection.prepareStatement("select * from articles where id in (select article_id from article_tag where tag_id=? ) and type=0 order by create_date desc limit ?,10");
+                PreparedStatement statement = connection.prepareStatement("select * from articles where id in (select article_id from article_tag where tag_id=? ) order by create_date desc limit ?,10");
                 statement.setInt(1 , tagId);
                 statement.setInt(2 , (pager.get("current") - 1) * 10);
                 ResultSet resultSet = statement.executeQuery();
@@ -79,7 +79,7 @@ public class ArticleDao extends BaseDao {
 		return execute((Operation<List<Map<String, String>>>) connection -> {
             List<Map<String, String>> result = new ArrayList<>();
             try {
-                PreparedStatement statement = connection.prepareStatement("select * from articles where id in (select article_id from article_tag where tag_id=?  and type=0 )");
+                PreparedStatement statement = connection.prepareStatement("select * from articles where id in (select article_id from article_tag where tag_id=?  )");
                 statement.setInt(1 , tagId);
                 ResultSet resultSet = statement.executeQuery();
                 while (resultSet.next()) {
@@ -96,7 +96,7 @@ public class ArticleDao extends BaseDao {
 		return execute((Operation<List<Map<String, String>>>) connection -> {
             List<Map<String, String>> result = new ArrayList<>();
             try {
-                PreparedStatement statement = connection.prepareStatement("select * from articles where id in (select article_id from article_category where category_id=? )  and type=0 order by create_date desc limit ?,10");
+                PreparedStatement statement = connection.prepareStatement("select * from articles where id in (select article_id from article_category where category_id=? )  order by create_date desc limit ?,10");
                 statement.setInt(1, categoryId);
                 statement.setInt(2 , (pager.get("current") - 1) * 10);
                 ResultSet resultSet = statement.executeQuery();
@@ -114,7 +114,7 @@ public class ArticleDao extends BaseDao {
 		return execute((Operation<List<Map<String, String>>>) connection -> {
             List<Map<String, String>> result = new ArrayList<>();
             try {
-                PreparedStatement statement = connection.prepareStatement("select * from articles where id in (select article_id from article_category where category_id=?  and type=0 )");
+                PreparedStatement statement = connection.prepareStatement("select * from articles where id in (select article_id from article_category where category_id=?  )");
                 statement.setInt(1, categoryId);
                 ResultSet resultSet = statement.executeQuery();
                 while (resultSet.next()) {
