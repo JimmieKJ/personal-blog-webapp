@@ -17,10 +17,10 @@ var _hmt = _hmt || [];
             <a class="header_nav_a" href="${questionIndexUrl}" title="疑问解答">疑问解答</a>
             <a class="header_nav_a" href="${recordIndexUrl}" title="问题记录" >问题记录</a>
             -->
-            <a class="header_nav_a" href="${contextPath}/blog/about_me.ftl" title="关于我" >关于我</a>
-            <a class="header_nav_a" href="${contextPath}/blog/article_list.ftl?type=0&current=1" title="全部文章">全部文章</a>
+            <a class="header_nav_a" href="${contextPath}/html/about_me.html" title="关于我" >关于我</a>
+            <a class="header_nav_a" href="${articlesIndexUrl}" title="全部文章">全部文章</a>
             <a class="header_nav_a" href="${novelIndexUrl}" title="书籍&教程">书籍&教程</a>
-            <a class="header_nav_a" href="${contextPath}/message/message_list.ftl" title="留言板" >留言板</a>
+            <a class="header_nav_a" href="${recordIndexUrl}" title="生活记录" >生活记录</a>
         </ul>
     </nav>
 </header>

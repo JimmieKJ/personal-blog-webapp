@@ -26,5 +26,5 @@
 </#if>
 </div>
 <div>
-	<a class="header_nav_a" href="${contextPath}/blog/article_list.ftl?type=0&current=1" title="全部文章">全部文章</a>
+	<a class="header_nav_a" href="${articlesIndexUrl}" title="全部文章">全部文章</a>
 </div>

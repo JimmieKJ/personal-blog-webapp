@@ -67,11 +67,13 @@ public abstract class FreemarkerHelper {
             data.put("questionIndexUrl", QuestionListHelper.generateDynamicPath(1));
             data.put("recordIndexUrl", RecordListHelper.generateDynamicPath(1));
             data.put("novelIndexUrl", ArticleListHelper.generateDynamicTypePath(1, 1));
+            data.put("articlesIndexUrl", ArticleListHelper.generateDynamicTypePath(0, 1));
         } else {
             data.put("indexUrl", IndexHelper.generateStaticPath());
             data.put("questionIndexUrl", QuestionListHelper.generateStaticPath(1));
             data.put("recordIndexUrl", RecordListHelper.generateStaticPath(1));
             data.put("novelIndexUrl", ArticleListHelper.generateStaticPath("novel", 1));
+            data.put("articlesIndexUrl", ArticleListHelper.generateStaticPath("article", 1));
         }
         if (namespace.equals("dota")) {
             List<Map<String, String>> matchList = DaoFactory.getDao(MatchDao.class).getAll();

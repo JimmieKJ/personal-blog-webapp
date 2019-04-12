@@ -41,7 +41,7 @@ public class ExceptionGenerator implements Generator {
         Writer writerError = null;
         Writer writerNotFound = null;
         try {
-            Map<String, Object> data = FreemarkerHelper.buildCommonDataMap(ViewMode.DYNAMIC);
+            Map<String, Object> data = FreemarkerHelper.buildCommonDataMap(ViewMode.STATIC);
             data.put("error", "网站发生内部错误，请联系站长！");
             String htmlPath = Configuration.getContextPath("html/error.html");
             writerError = new FileWriter(htmlPath);

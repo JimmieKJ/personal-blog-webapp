@@ -141,7 +141,27 @@ public class ArticleListHelper {
             data.put("lastPageUrl", ArticleListHelper.generateDynamicTypePath(1, page));
         }
     }
-
+    
+    public static void putDataMapForArticle(Map<String, Object> data, ViewMode viewMode , int current , int total) {
+        int page = (total % 10 == 0) ? (total / 10) : (total / 10 + 1);
+        Map<String, Integer> pager = new HashMap<>();
+        pager.put("current", current);
+        pager.put("total", total);
+        pager.put("page", page);
+        data.put("pageArticles", DaoFactory.getDao(ArticleDao.class).getPageArticlesByType(pager, Type.article, Status.published, viewMode));
+        data.put("pager", pager);
+        if (viewMode == ViewMode.STATIC) {
+            data.put("firstPageUrl", ArticleListHelper.generateStaticPath("article", 1));
+            data.put("prePageUrl", ArticleListHelper.generateStaticPath("article", current - 1));
+            data.put("nextPageUrl", ArticleListHelper.generateStaticPath("article", current + 1));
+            data.put("lastPageUrl", ArticleListHelper.generateStaticPath("article", page));
+        } else {
+            data.put("firstPageUrl", ArticleListHelper.generateDynamicTypePath(0, 1));
+            data.put("prePageUrl", ArticleListHelper.generateDynamicTypePath(0, current - 1));
+            data.put("nextPageUrl", ArticleListHelper.generateDynamicTypePath(0, current + 1));
+            data.put("lastPageUrl", ArticleListHelper.generateDynamicTypePath(0, page));
+        }
+    }
 
     public static void putDataMapForManager(Map<String, Object> data, ViewMode viewMode, int current) {
         int total = DaoFactory.getDao(ArticleDao.class).getArticles("create_date", viewMode).size();

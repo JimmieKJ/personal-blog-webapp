@@ -47,6 +47,7 @@ public class ArticleListGenerator implements Generator {
 		generateArticleList("access_times");
 		generateArticleList("good_times");
         generateNovelList();
+        generateWArticleList();
 	}
 	
 	private void generateArticleList(String orderColumn) {
@@ -74,7 +75,33 @@ public class ArticleListGenerator implements Generator {
 	        }
 		}
 	}
-
+	
+	private void generateWArticleList(){
+		List<Map<String, String>> articles = DaoFactory.getDao(ArticleDao.class).getArticlesByType(Type.article, Status.published, VIEW_MODE);
+        int total = articles.size();
+        int page = (total % 10 == 0) ? (total / 10) : (total / 10 + 1);
+        for (int i = 1; i < page + 1; i++) {
+            Writer writer = null;
+            try {
+                Map<String, Object> data = FreemarkerHelper.buildCommonDataMap(VIEW_MODE);
+                ArticleListHelper.putDataMapForArticle(data, VIEW_MODE, i, total);
+                String htmlPath = Configuration.getContextPath(ArticleListHelper.generateStaticPath("article", i));
+                writer = new FileWriter(htmlPath);
+                FreemarkerHelper.generate("article_list", writer, data);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            } finally {
+                try {
+                    if (writer != null) {
+                        writer.close();
+                    }
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
+	}
+	
     private void generateNovelList() {
         List<Map<String, String>> articles = DaoFactory.getDao(ArticleDao.class).getArticlesByType(Type.novel, Status.published, VIEW_MODE);
         int total = articles.size();

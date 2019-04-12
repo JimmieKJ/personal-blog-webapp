@@ -47,6 +47,14 @@ public class CommonGenerator implements Generator {
 			htmlPath = Configuration.getContextPath("/html/upload_image.html");
 			writer = new FileWriter(htmlPath);
 			FreemarkerHelper.generate("common", "upload_image", writer, data);
+			
+			htmlPath = Configuration.getContextPath("/html/wechat_img.html");
+			writer = new FileWriter(htmlPath);
+			FreemarkerHelper.generate("common", "wechat_img", writer, data);
+			
+			htmlPath = Configuration.getContextPath("/html/about_me.html");
+			writer = new FileWriter(htmlPath);
+			FreemarkerHelper.generate("common", "about_me", writer, data);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		} finally {
